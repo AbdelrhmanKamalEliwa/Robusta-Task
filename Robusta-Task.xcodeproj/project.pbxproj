@@ -8,20 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4EF3FC482922C87B00138E94 /* Robusta_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FC472922C87B00138E94 /* Robusta_TaskApp.swift */; };
-		4EF3FC4A2922C87B00138E94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FC492922C87B00138E94 /* ContentView.swift */; };
 		4EF3FC4C2922C87C00138E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF3FC4B2922C87C00138E94 /* Assets.xcassets */; };
 		4EF3FC4F2922C87C00138E94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF3FC4E2922C87C00138E94 /* Preview Assets.xcassets */; };
-		4EF3FC512922C87C00138E94 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FC502922C87C00138E94 /* Persistence.swift */; };
 		4EF3FC542922C87C00138E94 /* Robusta_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FC522922C87C00138E94 /* Robusta_Task.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EF3FC442922C87B00138E94 /* Robusta-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robusta-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF3FC472922C87B00138E94 /* Robusta_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robusta_TaskApp.swift; sourceTree = "<group>"; };
-		4EF3FC492922C87B00138E94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EF3FC4B2922C87C00138E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF3FC4E2922C87C00138E94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4EF3FC502922C87C00138E94 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4EF3FC532922C87C00138E94 /* Robusta_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Robusta_Task.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,11 +51,11 @@
 		4EF3FC462922C87B00138E94 /* Robusta-Task */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FC472922C87B00138E94 /* Robusta_TaskApp.swift */,
-				4EF3FC492922C87B00138E94 /* ContentView.swift */,
-				4EF3FC4B2922C87C00138E94 /* Assets.xcassets */,
-				4EF3FC502922C87C00138E94 /* Persistence.swift */,
-				4EF3FC522922C87C00138E94 /* Robusta_Task.xcdatamodeld */,
+				4EF3FC5D2922C90D00138E94 /* Core */,
+				4EF3FC5E2922C91400138E94 /* Scenes */,
+				4EF3FC5C2922C90900138E94 /* Utilities */,
+				4EF3FC5B2922C90300138E94 /* App */,
+				4EF3FC5A2922C8FF00138E94 /* Resources */,
 				4EF3FC4D2922C87C00138E94 /* Preview Content */,
 			);
 			path = "Robusta-Task";
@@ -71,6 +67,44 @@
 				4EF3FC4E2922C87C00138E94 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4EF3FC5A2922C8FF00138E94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FC4B2922C87C00138E94 /* Assets.xcassets */,
+				4EF3FC522922C87C00138E94 /* Robusta_Task.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4EF3FC5B2922C90300138E94 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FC472922C87B00138E94 /* Robusta_TaskApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4EF3FC5C2922C90900138E94 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4EF3FC5D2922C90D00138E94 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4EF3FC5E2922C91400138E94 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF3FC512922C87C00138E94 /* Persistence.swift in Sources */,
-				4EF3FC4A2922C87B00138E94 /* ContentView.swift in Sources */,
 				4EF3FC482922C87B00138E94 /* Robusta_TaskApp.swift in Sources */,
 				4EF3FC542922C87C00138E94 /* Robusta_Task.xcdatamodeld in Sources */,
 			);
