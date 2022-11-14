@@ -7,10 +7,6 @@
 
 import Foundation
 
-//struct ReposResponse: Decodable {
-//    let date: Date?
-//}
-
 struct ReposResponse: Decodable, Identifiable {
     let id: Int?
     let name: String?

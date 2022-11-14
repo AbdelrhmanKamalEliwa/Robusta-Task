@@ -61,6 +61,8 @@
 		4EF3FCE82922CC8200138E94 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */; };
 		4EF3FCE92922CC8200138E94 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE52922CC8200138E94 /* ReposView.swift */; };
 		4EF3FCEA2922CC8200138E94 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE72922CC8200138E94 /* RepoCell.swift */; };
+		4EF3FCEC2922CCD900138E94 /* ReposViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */; };
+		4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCED2922CDE800138E94 /* ViewModelState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,8 @@
 		4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		4EF3FCE52922CC8200138E94 /* ReposView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
 		4EF3FCE72922CC8200138E94 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelContract.swift; sourceTree = "<group>"; };
+		4EF3FCED2922CDE800138E94 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,9 +437,9 @@
 		4EF3FCC22922CBA200138E94 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FCE12922CC8200138E94 /* Presentation */,
-				4EF3FCD72922CC0A00138E94 /* Domain */,
 				4EF3FCC62922CBCF00138E94 /* Data */,
+				4EF3FCD72922CC0A00138E94 /* Domain */,
+				4EF3FCE12922CC8200138E94 /* Presentation */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -443,8 +447,8 @@
 		4EF3FCC62922CBCF00138E94 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FCC72922CBCF00138E94 /* Repository */,
 				4EF3FCCA2922CBCF00138E94 /* Services */,
+				4EF3FCC72922CBCF00138E94 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -515,6 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF3FCDD2922CC0A00138E94 /* ReposResponse.swift */,
+				4EF3FCED2922CDE800138E94 /* ViewModelState.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */,
+				4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -635,6 +641,7 @@
 				4EF3FCB02922C9D000138E94 /* ImageLoadingView.swift in Sources */,
 				4EF3FCAF2922C9D000138E94 /* ImageLoader.swift in Sources */,
 				4EF3FCD12922CBCF00138E94 /* ReposRepository.swift in Sources */,
+				4EF3FCEC2922CCD900138E94 /* ReposViewModelContract.swift in Sources */,
 				4EF3FCBC2922C9D500138E94 /* UIApplication.swift in Sources */,
 				4EF3FC812922C99D00138E94 /* APIService.swift in Sources */,
 				4EF3FCA02922C9C200138E94 /* UserDefaultsManager.swift in Sources */,
@@ -666,6 +673,7 @@
 				4EF3FCA32922C9C200138E94 /* debugPrint+Logger.swift in Sources */,
 				4EF3FCBD2922C9D500138E94 /* Optional.swift in Sources */,
 				4EF3FCA52922C9C200138E94 /* EnvironmentManager.swift in Sources */,
+				4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */,
 				4EF3FC822922C99D00138E94 /* APIBuilder.swift in Sources */,
 				4EF3FC7A2922C99D00138E94 /* Endpoints.swift in Sources */,
 				4EF3FC882922C99D00138E94 /* CoreDataManagerError.swift in Sources */,

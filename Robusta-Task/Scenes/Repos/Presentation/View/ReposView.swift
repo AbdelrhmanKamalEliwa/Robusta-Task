@@ -8,50 +8,74 @@
 import SwiftUI
 
 struct ReposView: View {
+    // MARK: - PROPERTIES
+    //
     @StateObject var viewModel = ReposViewModel()
     
+    // MARK: - BODY
+    //
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.items) { item in
+                ForEach(viewModel.repos) { repo in
                     NavigationLink {
-                        RepoCell(name: item.name ?? "", imageURL: item.owner?.avatarURL)
+                        RepoCell(name: repo.name ?? "", imageURL: repo.owner?.avatarURL)
                     } label: {
-                        RepoCell(name: item.name ?? "", imageURL: item.owner?.avatarURL)
-                    }
-                }
-                
-                switch viewModel.state {
-                case .idle:
-                    Color.clear
-                        .onAppear {
-                            viewModel.loadMore()
-                        }
-                    
-                case .loading:
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                        .frame(maxWidth: .infinity, idealHeight: 40)
-                    
-                case .loadedAll:
-                    Text("All data fetched")
-                        .foregroundColor(.gray)
-                        .padding(12)
-                    
-                case .error(let error):
-                    Text(error)
-                        .foregroundColor(.red)
-                        .padding(12)
-                }
-            }
+                        RepoCell(name: repo.name ?? "", imageURL: repo.owner?.avatarURL)
+                    } //: NavigationLink
+                } //: ForEach
+                stateView
+            } //: List
             .navigationTitle("Repositories")
-            
-        }
-    }
+        } //: NavigationView
+    } //: body
 }
 
+// MARK: - HELPERS
+//
+private extension ReposView {
+    var stateView: AnyView {
+        switch viewModel.state {
+        case .idle:
+            return Color.clear
+                .onAppear {
+                    viewModel.loadData()
+                }
+                .eraseToAnyView()
+            
+        case .loading:
+            return ProgressView()
+                .progressViewStyle(.circular)
+                .frame(maxWidth: .infinity, idealHeight: 40)
+                .eraseToAnyView()
+            
+        case .loadedAll:
+            return Text("All data fetched")
+                .foregroundColor(.gray)
+                .padding(12)
+                .eraseToAnyView()
+            
+        case .error(let error):
+            return Text(error)
+                .foregroundColor(.red)
+                .padding(12)
+                .eraseToAnyView()
+        }
+    } //: stateView
+}
+
+// MARK: - PREVIEWS
+//
+#if DEBUG
 struct ReposView_Previews: PreviewProvider {
     static var previews: some View {
         ReposView()
+    }
+}
+#endif
+
+extension View {
+    func eraseToAnyView() -> AnyView {
+        return AnyView(self)
     }
 }

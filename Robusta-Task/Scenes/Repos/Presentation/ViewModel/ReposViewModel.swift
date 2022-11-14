@@ -8,24 +8,21 @@
 import Foundation
 import Combine
 
-class ReposViewModel: DisposeObject, ObservableObject {
-    
-    enum State: Comparable {
-        case idle
-        case loading
-        case loadedAll
-        case error(String)
-    }
-    
-    @Published var items: [ReposResponse] = []
-    @Published var state: State = .idle
-    
+class ReposViewModel: DisposeObject, ReposViewModelContract {
+    // MARK: - PROPERTIES
+    //
+    @Published var repos: [ReposResponse] = []
+    @Published var state: ViewModelState = .idle
     private var fetchReposUseCase: FetchReposUseCaseContract
     private var fetchOffset: Int
     private var fetchLimit: Int
     private var maxCount = 100
     
-    init(fetchReposUseCase: FetchReposUseCaseContract = FetchReposUseCase()) {
+    // MARK: - INIT
+    //
+    init(
+        fetchReposUseCase: FetchReposUseCaseContract = FetchReposUseCase()
+    ) {
         self.fetchReposUseCase = fetchReposUseCase
         self.fetchOffset = 0
         self.fetchLimit = 10
@@ -33,17 +30,17 @@ class ReposViewModel: DisposeObject, ObservableObject {
         super.init()
     }
     
-    func didLoad() {
-        self.fetchLimit = 10
-        self.fetchOffset = 0
-        fetchData()
-    }
-    
-    func loadMore() {
+    // MARK: - METHODS
+    //
+    func loadData() {
         guard state == .idle, state != .loadedAll else { return }
         fetchData()
     }
-    
+}
+
+// MARK: - HELPERS
+//
+private extension ReposViewModel {
     func fetchData() {
         state = .loading
         
@@ -58,8 +55,8 @@ class ReposViewModel: DisposeObject, ObservableObject {
             } receiveValue: { [weak self] repos in
                 guard let self = self else { return }
                 self.state = .idle
-                self.items.append(contentsOf: repos)
-                if self.items.count == self.maxCount {
+                self.repos.append(contentsOf: repos)
+                if self.repos.count == self.maxCount {
                     self.state = .loadedAll
                 }
                 self.fetchOffset += self.fetchLimit
