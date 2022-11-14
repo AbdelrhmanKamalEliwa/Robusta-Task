@@ -13,7 +13,7 @@ public enum NetworkConstants {
     }
     
     static let retries: Int = 3
-    static let baseUrl: String = "https://api.github.com"
+    static let baseUrl: String = getBaseUrl()
     static let timeoutIntervalForRequest: Double = 120
     
     private static func getBaseUrl() -> String {

@@ -73,9 +73,3 @@ struct ReposView_Previews: PreviewProvider {
     }
 }
 #endif
-
-extension View {
-    func eraseToAnyView() -> AnyView {
-        return AnyView(self)
-    }
-}

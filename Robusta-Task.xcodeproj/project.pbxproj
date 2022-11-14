@@ -63,6 +63,7 @@
 		4EF3FCEA2922CC8200138E94 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE72922CC8200138E94 /* RepoCell.swift */; };
 		4EF3FCEC2922CCD900138E94 /* ReposViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */; };
 		4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCED2922CDE800138E94 /* ViewModelState.swift */; };
+		4EF3FCF02922D0CB00138E94 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCEF2922D0CB00138E94 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		4EF3FCE72922CC8200138E94 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelContract.swift; sourceTree = "<group>"; };
 		4EF3FCED2922CDE800138E94 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		4EF3FCEF2922D0CB00138E94 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4EF3FCF22922D1BF00138E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		4EF3FC462922C87B00138E94 /* Robusta-Task */ = {
 			isa = PBXGroup;
 			children = (
+				4EF3FCF32922D21000138E94 /* Configurations */,
 				4EF3FC5D2922C90D00138E94 /* Core */,
 				4EF3FC5E2922C91400138E94 /* Scenes */,
 				4EF3FC5C2922C90900138E94 /* Utilities */,
@@ -204,7 +208,8 @@
 		4EF3FC5D2922C90D00138E94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FCBE2922CA0200138E94 /* Bases */,
+				4EF3FCF12922D18600138E94 /* ViewModelState */,
+				4EF3FCBF2922CA1100138E94 /* Dispose */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -370,8 +375,8 @@
 		4EF3FC962922C9C200138E94 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FC972922C9C200138E94 /* Entity */,
 				4EF3FC992922C9C200138E94 /* ErrorResolver.swift */,
+				4EF3FC972922C9C200138E94 /* Entity */,
 				4EF3FC9A2922C9C200138E94 /* Helpers */,
 			);
 			path = Error;
@@ -414,16 +419,9 @@
 				4EF3FCB52922C9D500138E94 /* Dictionary.swift */,
 				4EF3FCB62922C9D500138E94 /* UIApplication.swift */,
 				4EF3FCB72922C9D500138E94 /* Optional.swift */,
+				4EF3FCEF2922D0CB00138E94 /* View.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		4EF3FCBE2922CA0200138E94 /* Bases */ = {
-			isa = PBXGroup;
-			children = (
-				4EF3FCBF2922CA1100138E94 /* Dispose */,
-			);
-			path = Bases;
 			sourceTree = "<group>";
 		};
 		4EF3FCBF2922CA1100138E94 /* Dispose */ = {
@@ -519,7 +517,6 @@
 			isa = PBXGroup;
 			children = (
 				4EF3FCDD2922CC0A00138E94 /* ReposResponse.swift */,
-				4EF3FCED2922CDE800138E94 /* ViewModelState.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -557,6 +554,22 @@
 				4EF3FCE72922CC8200138E94 /* RepoCell.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4EF3FCF12922D18600138E94 /* ViewModelState */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCED2922CDE800138E94 /* ViewModelState.swift */,
+			);
+			path = ViewModelState;
+			sourceTree = "<group>";
+		};
+		4EF3FCF32922D21000138E94 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCF22922D1BF00138E94 /* Info.plist */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -671,6 +684,7 @@
 				4EF3FCA42922C9C200138E94 /* FileManager.swift in Sources */,
 				4EF3FCDF2922CC0A00138E94 /* FetchReposUseCaseContract.swift in Sources */,
 				4EF3FCA32922C9C200138E94 /* debugPrint+Logger.swift in Sources */,
+				4EF3FCF02922D0CB00138E94 /* View.swift in Sources */,
 				4EF3FCBD2922C9D500138E94 /* Optional.swift in Sources */,
 				4EF3FCA52922C9C200138E94 /* EnvironmentManager.swift in Sources */,
 				4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */,
@@ -814,6 +828,7 @@
 				DEVELOPMENT_TEAM = 28U3K645XS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Robusta-Task/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -826,6 +841,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abdelrhmaneliwa.Robusta-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_HOST = api.github.com;
+				SERVER_SCHEME = https;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -843,6 +860,7 @@
 				DEVELOPMENT_TEAM = 28U3K645XS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Robusta-Task/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -855,6 +873,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abdelrhmaneliwa.Robusta-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_HOST = api.github.com;
+				SERVER_SCHEME = https;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
