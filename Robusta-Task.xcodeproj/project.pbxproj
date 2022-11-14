@@ -48,6 +48,7 @@
 		4EF3FCBB2922C9D500138E94 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCB52922C9D500138E94 /* Dictionary.swift */; };
 		4EF3FCBC2922C9D500138E94 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCB62922C9D500138E94 /* UIApplication.swift */; };
 		4EF3FCBD2922C9D500138E94 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCB72922C9D500138E94 /* Optional.swift */; };
+		4EF3FCC12922CA2700138E94 /* DisposeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCC02922CA2700138E94 /* DisposeObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		4EF3FCB52922C9D500138E94 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		4EF3FCB62922C9D500138E94 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		4EF3FCB72922C9D500138E94 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		4EF3FCC02922CA2700138E94 /* DisposeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		4EF3FC5D2922C90D00138E94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4EF3FCBE2922CA0200138E94 /* Bases */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -386,6 +389,22 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		4EF3FCBE2922CA0200138E94 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCBF2922CA1100138E94 /* Dispose */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		4EF3FCBF2922CA1100138E94 /* Dispose */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCC02922CA2700138E94 /* DisposeObject.swift */,
+			);
+			path = Dispose;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +479,7 @@
 				4EF3FC7F2922C99D00138E94 /* NetworkConstants.swift in Sources */,
 				4EF3FC7E2922C99D00138E94 /* NetworkParameters.swift in Sources */,
 				4EF3FC792922C99D00138E94 /* BaseResponse.swift in Sources */,
+				4EF3FCC12922CA2700138E94 /* DisposeObject.swift in Sources */,
 				4EF3FCA12922C9C200138E94 /* Logger.swift in Sources */,
 				4EF3FC832922C99D00138E94 /* CoreDataStorageContext.swift in Sources */,
 				4EF3FCB02922C9D000138E94 /* ImageLoadingView.swift in Sources */,
