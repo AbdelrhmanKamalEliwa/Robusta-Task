@@ -58,6 +58,9 @@
 		4EF3FCDE2922CC0A00138E94 /* FetchReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCDA2922CC0A00138E94 /* FetchReposUseCase.swift */; };
 		4EF3FCDF2922CC0A00138E94 /* FetchReposUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCDB2922CC0A00138E94 /* FetchReposUseCaseContract.swift */; };
 		4EF3FCE02922CC0A00138E94 /* ReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCDD2922CC0A00138E94 /* ReposResponse.swift */; };
+		4EF3FCE82922CC8200138E94 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */; };
+		4EF3FCE92922CC8200138E94 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE52922CC8200138E94 /* ReposView.swift */; };
+		4EF3FCEA2922CC8200138E94 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCE72922CC8200138E94 /* RepoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +116,9 @@
 		4EF3FCDA2922CC0A00138E94 /* FetchReposUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchReposUseCase.swift; sourceTree = "<group>"; };
 		4EF3FCDB2922CC0A00138E94 /* FetchReposUseCaseContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchReposUseCaseContract.swift; sourceTree = "<group>"; };
 		4EF3FCDD2922CC0A00138E94 /* ReposResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposResponse.swift; sourceTree = "<group>"; };
+		4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		4EF3FCE52922CC8200138E94 /* ReposView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
+		4EF3FCE72922CC8200138E94 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +433,7 @@
 		4EF3FCC22922CBA200138E94 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
+				4EF3FCE12922CC8200138E94 /* Presentation */,
 				4EF3FCD72922CC0A00138E94 /* Domain */,
 				4EF3FCC62922CBCF00138E94 /* Data */,
 			);
@@ -510,6 +517,40 @@
 				4EF3FCDD2922CC0A00138E94 /* ReposResponse.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		4EF3FCE12922CC8200138E94 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCE22922CC8200138E94 /* ViewModel */,
+				4EF3FCE42922CC8200138E94 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4EF3FCE22922CC8200138E94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCE32922CC8200138E94 /* ReposViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EF3FCE42922CC8200138E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCE52922CC8200138E94 /* ReposView.swift */,
+				4EF3FCE62922CC8200138E94 /* Helpers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF3FCE62922CC8200138E94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FCE72922CC8200138E94 /* RepoCell.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +638,7 @@
 				4EF3FCBC2922C9D500138E94 /* UIApplication.swift in Sources */,
 				4EF3FC812922C99D00138E94 /* APIService.swift in Sources */,
 				4EF3FCA02922C9C200138E94 /* UserDefaultsManager.swift in Sources */,
+				4EF3FCE92922CC8200138E94 /* ReposView.swift in Sources */,
 				4EF3FCB82922C9D500138E94 /* Publisher.swift in Sources */,
 				4EF3FCBB2922C9D500138E94 /* Dictionary.swift in Sources */,
 				4EF3FCDE2922CC0A00138E94 /* FetchReposUseCase.swift in Sources */,
@@ -612,6 +654,7 @@
 				4EF3FCAB2922C9C200138E94 /* ErrorType.swift in Sources */,
 				4EF3FC482922C87B00138E94 /* Robusta_TaskApp.swift in Sources */,
 				4EF3FCD32922CBCF00138E94 /* ReposLocalServiceContract.swift in Sources */,
+				4EF3FCEA2922CC8200138E94 /* RepoCell.swift in Sources */,
 				4EF3FC7B2922C99D00138E94 /* NetworkMethods.swift in Sources */,
 				4EF3FCA22922C9C200138E94 /* Print+Logger.swift in Sources */,
 				4EF3FCA72922C9C200138E94 /* ErrorResolver.swift in Sources */,
@@ -628,6 +671,7 @@
 				4EF3FC882922C99D00138E94 /* CoreDataManagerError.swift in Sources */,
 				4EF3FCA62922C9C200138E94 /* BaseError.swift in Sources */,
 				4EF3FC542922C87C00138E94 /* Robusta_Task.xcdatamodeld in Sources */,
+				4EF3FCE82922CC8200138E94 /* ReposViewModel.swift in Sources */,
 				4EF3FC842922C99D00138E94 /* CoreDataManager.swift in Sources */,
 				4EF3FC852922C99D00138E94 /* CoreDataStorageContextContract.swift in Sources */,
 				4EF3FC7C2922C99D00138E94 /* NetworkHeaders.swift in Sources */,
