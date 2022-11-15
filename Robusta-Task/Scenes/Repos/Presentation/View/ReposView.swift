@@ -11,6 +11,7 @@ struct ReposView: View {
     // MARK: - PROPERTIES
     //
     @StateObject var viewModel = ReposViewModel()
+    @State var stateViewDidLoad: Bool = false
     
     // MARK: - BODY
     //
@@ -24,6 +25,7 @@ struct ReposView: View {
                         RepoCell(name: repo.name ?? "", imageURL: repo.owner?.avatarURL)
                     } //: NavigationLink
                 } //: ForEach
+                
                 stateView
             } //: List
             .navigationTitle("Repositories")
@@ -39,7 +41,11 @@ private extension ReposView {
         case .idle:
             return Color.clear
                 .onAppear {
-                    viewModel.loadData()
+                    if stateViewDidLoad {
+                        viewModel.loadData()
+                    }
+                    
+                    stateViewDidLoad = true
                 }
                 .eraseToAnyView()
             

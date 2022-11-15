@@ -64,7 +64,24 @@
 		4EF3FCEC2922CCD900138E94 /* ReposViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCEB2922CCD900138E94 /* ReposViewModelContract.swift */; };
 		4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCED2922CDE800138E94 /* ViewModelState.swift */; };
 		4EF3FCF02922D0CB00138E94 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FCEF2922D0CB00138E94 /* View.swift */; };
+		4EF3FD072923983900138E94 /* ReposViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD062923983900138E94 /* ReposViewModelTests.swift */; };
+		4EF3FD0A29239A7700138E94 /* MockValidFetchReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */; };
+		4EF3FD0C29239A8A00138E94 /* MockInValidFetchReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */; };
+		4EF3FD0E2923A8E100138E94 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0D2923A8E100138E94 /* MockData.swift */; };
+		4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */; };
+		4EF3FD1F2923E00B00138E94 /* MockValidReposRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD1E2923E00B00138E94 /* MockValidReposRepository.swift */; };
+		4EF3FD212923E03D00138E94 /* MockInValidReposRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EF3FCFC2923955500138E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EF3FC3C2922C87B00138E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EF3FC432922C87B00138E94;
+			remoteInfo = "Robusta-Task";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4EF3FC442922C87B00138E94 /* Robusta-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robusta-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,10 +143,25 @@
 		4EF3FCED2922CDE800138E94 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		4EF3FCEF2922D0CB00138E94 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4EF3FCF22922D1BF00138E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF3FCF82923955500138E94 /* Robusta-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Robusta-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF3FD062923983900138E94 /* ReposViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelTests.swift; sourceTree = "<group>"; };
+		4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidFetchReposUseCase.swift; sourceTree = "<group>"; };
+		4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidFetchReposUseCase.swift; sourceTree = "<group>"; };
+		4EF3FD0D2923A8E100138E94 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReposUseCaseTest.swift; sourceTree = "<group>"; };
+		4EF3FD1E2923E00B00138E94 /* MockValidReposRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidReposRepository.swift; sourceTree = "<group>"; };
+		4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidReposRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4EF3FC412922C87B00138E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF3FCF52923955500138E94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF3FC462922C87B00138E94 /* Robusta-Task */,
+				4EF3FCF92923955500138E94 /* Robusta-TaskTests */,
 				4EF3FC452922C87B00138E94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF3FC442922C87B00138E94 /* Robusta-Task.app */,
+				4EF3FCF82923955500138E94 /* Robusta-TaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -572,6 +606,84 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		4EF3FCF92923955500138E94 /* Robusta-TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD012923979A00138E94 /* Repos */,
+			);
+			path = "Robusta-TaskTests";
+			sourceTree = "<group>";
+		};
+		4EF3FD012923979A00138E94 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD0829239A0A00138E94 /* Mocks */,
+				4EF3FD0F2923DB5D00138E94 /* Domain */,
+				4EF3FD02292397A000138E94 /* Presentaion */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		4EF3FD02292397A000138E94 /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD03292397AC00138E94 /* ViewModel */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		4EF3FD03292397AC00138E94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD062923983900138E94 /* ReposViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EF3FD0829239A0A00138E94 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD0D2923A8E100138E94 /* MockData.swift */,
+				4EF3FD1D2923DFEE00138E94 /* Repository */,
+				4EF3FD162923DC9400138E94 /* UseCases */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4EF3FD0F2923DB5D00138E94 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD102923DB6100138E94 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4EF3FD102923DB6100138E94 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4EF3FD162923DC9400138E94 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */,
+				4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4EF3FD1D2923DFEE00138E94 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD1E2923E00B00138E94 /* MockValidReposRepository.swift */,
+				4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -592,6 +704,24 @@
 			productReference = 4EF3FC442922C87B00138E94 /* Robusta-Task.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4EF3FCF72923955500138E94 /* Robusta-TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF3FCFE2923955500138E94 /* Build configuration list for PBXNativeTarget "Robusta-TaskTests" */;
+			buildPhases = (
+				4EF3FCF42923955500138E94 /* Sources */,
+				4EF3FCF52923955500138E94 /* Frameworks */,
+				4EF3FCF62923955500138E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EF3FCFD2923955500138E94 /* PBXTargetDependency */,
+			);
+			name = "Robusta-TaskTests";
+			productName = "Robusta-TaskTests";
+			productReference = 4EF3FCF82923955500138E94 /* Robusta-TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -604,6 +734,10 @@
 				TargetAttributes = {
 					4EF3FC432922C87B00138E94 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					4EF3FCF72923955500138E94 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4EF3FC432922C87B00138E94;
 					};
 				};
 			};
@@ -621,6 +755,7 @@
 			projectRoot = "";
 			targets = (
 				4EF3FC432922C87B00138E94 /* Robusta-Task */,
+				4EF3FCF72923955500138E94 /* Robusta-TaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -632,6 +767,13 @@
 			files = (
 				4EF3FC4F2922C87C00138E94 /* Preview Assets.xcassets in Resources */,
 				4EF3FC4C2922C87C00138E94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF3FCF62923955500138E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +842,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EF3FCF42923955500138E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF3FD072923983900138E94 /* ReposViewModelTests.swift in Sources */,
+				4EF3FD212923E03D00138E94 /* MockInValidReposRepository.swift in Sources */,
+				4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTest.swift in Sources */,
+				4EF3FD1F2923E00B00138E94 /* MockValidReposRepository.swift in Sources */,
+				4EF3FD0C29239A8A00138E94 /* MockInValidFetchReposUseCase.swift in Sources */,
+				4EF3FD0A29239A7700138E94 /* MockValidFetchReposUseCase.swift in Sources */,
+				4EF3FD0E2923A8E100138E94 /* MockData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EF3FCFD2923955500138E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EF3FC432922C87B00138E94 /* Robusta-Task */;
+			targetProxy = 4EF3FCFC2923955500138E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4EF3FC552922C87C00138E94 /* Debug */ = {
@@ -881,6 +1045,42 @@
 			};
 			name = Release;
 		};
+		4EF3FCFF2923955500138E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28U3K645XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdelrhmaneliwa.Robusta-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robusta-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Robusta-Task";
+			};
+			name = Debug;
+		};
+		4EF3FD002923955500138E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28U3K645XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdelrhmaneliwa.Robusta-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robusta-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Robusta-Task";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -898,6 +1098,15 @@
 			buildConfigurations = (
 				4EF3FC582922C87C00138E94 /* Debug */,
 				4EF3FC592922C87C00138E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF3FCFE2923955500138E94 /* Build configuration list for PBXNativeTarget "Robusta-TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF3FCFF2923955500138E94 /* Debug */,
+				4EF3FD002923955500138E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
