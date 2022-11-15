@@ -21,7 +21,7 @@
 - ImageLoader (Native): Loading Images from URL and Caching it
 
 ## Architecture
-![](https://github.com/AbdelrhmanKamalEliwa/Robusta-Task/blob/master/Readme%20assets/Usage-2.png?raw=true)
+![](https://github.com/AbdelrhmanKamalEliwa/Robusta-Task/blob/main/ReadMe%20Assets/Clean-Architecture.jpg)
 
 
 ## Author
