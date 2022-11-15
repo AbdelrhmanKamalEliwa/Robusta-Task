@@ -11,12 +11,13 @@ struct ImageLoadingView: View {
     // MARK: - PROPERTIES
     //
     @StateObject var imageLoader: ImageLoader
-    var imageSize: CGFloat = 40
+    private var imageSize: CGFloat = 40
     
     // MARK: - INIT
     //
-    init(url: String?) {
+    init(url: String?, imageSize: CGFloat = 40) {
         self._imageLoader = StateObject(wrappedValue: ImageLoader(url: url))
+        self.imageSize = imageSize
     }
     
     // MARK: - BODY

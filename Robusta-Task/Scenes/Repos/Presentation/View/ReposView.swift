@@ -10,8 +10,15 @@ import SwiftUI
 struct ReposView: View {
     // MARK: - PROPERTIES
     //
-    @StateObject var viewModel = ReposViewModel()
-    @State var stateViewDidLoad: Bool = false
+    @StateObject private var viewModel: ReposViewModel
+    @State private var stateViewDidLoad: Bool
+    
+    // MARK: - INIT
+    //
+    init(viewModel: ReposViewModel = ReposViewModel(), stateViewDidLoad: Bool = false) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.stateViewDidLoad = stateViewDidLoad
+    }
     
     // MARK: - BODY
     //
@@ -20,7 +27,7 @@ struct ReposView: View {
             List {
                 ForEach(viewModel.repos) { repo in
                     NavigationLink {
-                        RepoCell(name: repo.name ?? "", imageURL: repo.owner?.avatarURL)
+                        RepoDetailsView(viewModel: .init(repo: repo))
                     } label: {
                         RepoCell(name: repo.name ?? "", imageURL: repo.owner?.avatarURL)
                     } //: NavigationLink

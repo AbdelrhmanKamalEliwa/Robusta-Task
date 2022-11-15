@@ -76,6 +76,9 @@
 		4EF3FD2A29240C4800138E94 /* MockValidSearchOnReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2929240C4800138E94 /* MockValidSearchOnReposUseCase.swift */; };
 		4EF3FD2C29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2B29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift */; };
 		4EF3FD3029240E3500138E94 /* SearchOnReposUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2F29240E3500138E94 /* SearchOnReposUseCaseTests.swift */; };
+		4EF3FD3629240F7100138E94 /* RepoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD3529240F7100138E94 /* RepoDetailsView.swift */; };
+		4EF3FD3829240F9B00138E94 /* RepoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD3729240F9B00138E94 /* RepoDetailsViewModel.swift */; };
+		4EF3FD3A29240FB500138E94 /* RepoDetailsViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD3929240FB500138E94 /* RepoDetailsViewModelContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +164,9 @@
 		4EF3FD2929240C4800138E94 /* MockValidSearchOnReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidSearchOnReposUseCase.swift; sourceTree = "<group>"; };
 		4EF3FD2B29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidSearchOnReposUseCase.swift; sourceTree = "<group>"; };
 		4EF3FD2F29240E3500138E94 /* SearchOnReposUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnReposUseCaseTests.swift; sourceTree = "<group>"; };
+		4EF3FD3529240F7100138E94 /* RepoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsView.swift; sourceTree = "<group>"; };
+		4EF3FD3729240F9B00138E94 /* RepoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewModel.swift; sourceTree = "<group>"; };
+		4EF3FD3929240FB500138E94 /* RepoDetailsViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewModelContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +267,7 @@
 		4EF3FC5E2922C91400138E94 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EF3FD3129240F4D00138E94 /* RepoDetails */,
 				4EF3FCC22922CBA200138E94 /* Repos */,
 			);
 			path = Scenes;
@@ -739,6 +746,40 @@
 			path = SearchOnReposUseCase;
 			sourceTree = "<group>";
 		};
+		4EF3FD3129240F4D00138E94 /* RepoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD3229240F5300138E94 /* Presentation */,
+			);
+			path = RepoDetails;
+			sourceTree = "<group>";
+		};
+		4EF3FD3229240F5300138E94 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD3429240F6200138E94 /* ViewModel */,
+				4EF3FD3329240F5D00138E94 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4EF3FD3329240F5D00138E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD3529240F7100138E94 /* RepoDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF3FD3429240F6200138E94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD3729240F9B00138E94 /* RepoDetailsViewModel.swift */,
+				4EF3FD3929240FB500138E94 /* RepoDetailsViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -849,6 +890,7 @@
 				4EF3FCE02922CC0A00138E94 /* ReposResponse.swift in Sources */,
 				4EF3FC832922C99D00138E94 /* CoreDataStorageContext.swift in Sources */,
 				4EF3FCB02922C9D000138E94 /* ImageLoadingView.swift in Sources */,
+				4EF3FD3A29240FB500138E94 /* RepoDetailsViewModelContract.swift in Sources */,
 				4EF3FD242924005300138E94 /* SearchOnReposUseCase.swift in Sources */,
 				4EF3FCAF2922C9D000138E94 /* ImageLoader.swift in Sources */,
 				4EF3FCD12922CBCF00138E94 /* ReposRepository.swift in Sources */,
@@ -874,11 +916,13 @@
 				4EF3FCD32922CBCF00138E94 /* ReposLocalServiceContract.swift in Sources */,
 				4EF3FCEA2922CC8200138E94 /* RepoCell.swift in Sources */,
 				4EF3FC7B2922C99D00138E94 /* NetworkMethods.swift in Sources */,
+				4EF3FD3629240F7100138E94 /* RepoDetailsView.swift in Sources */,
 				4EF3FCA22922C9C200138E94 /* Print+Logger.swift in Sources */,
 				4EF3FCA72922C9C200138E94 /* ErrorResolver.swift in Sources */,
 				4EF3FCB92922C9D500138E94 /* Data.swift in Sources */,
 				4EF3FC7D2922C99D00138E94 /* NetworkContentType.swift in Sources */,
 				4EF3FCA92922C9C200138E94 /* ErrorType+Message.swift in Sources */,
+				4EF3FD3829240F9B00138E94 /* RepoDetailsViewModel.swift in Sources */,
 				4EF3FCA42922C9C200138E94 /* FileManager.swift in Sources */,
 				4EF3FCDF2922CC0A00138E94 /* FetchReposUseCaseContract.swift in Sources */,
 				4EF3FCA32922C9C200138E94 /* debugPrint+Logger.swift in Sources */,
