@@ -10,10 +10,12 @@ import Foundation
 typealias ReposViewModelContract = ObservableObject & ReposViewModelInputs & ReposViewModelOutputs
 
 protocol ReposViewModelInputs {
+    var searchText: String { get set }
     func loadData()
 }
 
 protocol ReposViewModelOutputs {
     var repos: [ReposResponse] { get }
     var state: ViewModelState { get }
+    var isSearching: Bool { get }
 }

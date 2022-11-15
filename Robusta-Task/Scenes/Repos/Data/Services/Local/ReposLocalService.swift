@@ -52,4 +52,11 @@ final class ReposLocalService: DisposeObject, ReposLocalServiceContract {
     func deleteRepos() -> AnyPublisher<Void, Error> {
         managedObject.deleteAll()
     }
+    
+    func searchOnRepos(with text: String) -> AnyPublisher<[Repo], Error> {
+        managedObject.fetch(
+//            sortDescriptors: [SortDescriptor<Repo>(\.name)],
+            predicate: NSPredicate(format: "name contains[c] %@", text)
+        )
+    }
 }

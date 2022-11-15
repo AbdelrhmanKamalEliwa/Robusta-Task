@@ -9,8 +9,14 @@
 import Combine
 
 final class MockValidReposRepository: ReposRepositoryContract {
+    func searchOnRepos(with text: String) -> AnyPublisher<[ReposResponse], BaseError> {
+        Just(MockData.repos)
+            .eraseToBaseError()
+            .eraseToAnyPublisher()
+    }
+    
     func fetchRepos(offset: Int?, limit: Int?) -> AnyPublisher<[ReposResponse], BaseError> {
-        Just(MockData.repos())
+        Just(MockData.repos)
             .eraseToBaseError()
             .eraseToAnyPublisher()
     }

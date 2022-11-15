@@ -42,6 +42,24 @@ final class ReposRepository: DisposeObject, ReposRepositoryContract {
         
         return fetchFromRemoteAndCacheData()
     }
+    
+    func searchOnRepos(with text: String) -> AnyPublisher<[ReposResponse], BaseError> {
+        localService
+            .searchOnRepos(with: text)
+            .map { items in
+                return items.map {
+                    ReposResponse(
+                        id: $0.id.int,
+                        name: $0.name,
+                        fullName: $0.fullName,
+                        isPrivate: $0.isPrivate,
+                        owner: .init(id: $0.ownerId.int, avatarURL: $0.ownerAvatarURL)
+                    )
+                }
+            }
+            .eraseToBaseError()
+            .eraseToAnyPublisher()
+    }
 }
 
 // MARK: - HELPERS

@@ -1,5 +1,5 @@
 //
-//  FetchReposUseCaseTest.swift
+//  FetchReposUseCaseTests.swift
 //  Robusta-TaskTests
 //
 //  Created by Abdelrhman Eliwa on 15/11/2022.
@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import Robusta_Task
 
-final class FetchReposUseCaseTest: XCTestCase {
+final class FetchReposUseCaseTests: XCTestCase {
     
     // MARK: - PROPERTIES
     private var sut: FetchReposUseCase!

@@ -11,7 +11,7 @@ import Combine
 
 final class MockValidFetchReposUseCase: FetchReposUseCaseContract {
     func execute(offset: Int?, limit: Int?) -> AnyPublisher<[ReposResponse], BaseError> {
-        Just(MockData.repos())
+        Just(MockData.repos)
             .eraseToBaseError()
             .eraseToAnyPublisher()
     }

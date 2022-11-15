@@ -9,4 +9,5 @@ import Combine
 
 protocol ReposRepositoryContract {
     func fetchRepos(offset: Int?, limit: Int?) -> AnyPublisher<[ReposResponse], BaseError>
+    func searchOnRepos(with text: String) -> AnyPublisher<[ReposResponse], BaseError>
 }

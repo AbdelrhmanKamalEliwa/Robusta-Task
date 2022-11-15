@@ -9,6 +9,7 @@ import Combine
 
 protocol ReposLocalServiceContract {
     func fetchRepos(offset: Int?, limit: Int?) -> AnyPublisher<[Repo], Error>
+    func searchOnRepos(with text: String) -> AnyPublisher<[Repo], Error>
     func addRepo(_ repo: ReposResponse) -> AnyPublisher<Repo, Error>
     func deleteRepos() -> AnyPublisher<Void, Error>
 }

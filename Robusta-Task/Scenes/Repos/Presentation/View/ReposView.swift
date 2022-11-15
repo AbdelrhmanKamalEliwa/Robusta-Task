@@ -29,6 +29,7 @@ struct ReposView: View {
                 stateView
             } //: List
             .navigationTitle("Repositories")
+            .searchable(text: $viewModel.searchText)
         } //: NavigationView
     } //: body
 }
@@ -41,7 +42,7 @@ private extension ReposView {
         case .idle:
             return Color.clear
                 .onAppear {
-                    if stateViewDidLoad {
+                    if stateViewDidLoad, !viewModel.isSearching {
                         viewModel.loadData()
                     }
                     

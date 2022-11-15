@@ -68,9 +68,14 @@
 		4EF3FD0A29239A7700138E94 /* MockValidFetchReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */; };
 		4EF3FD0C29239A8A00138E94 /* MockInValidFetchReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */; };
 		4EF3FD0E2923A8E100138E94 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD0D2923A8E100138E94 /* MockData.swift */; };
-		4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */; };
+		4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTests.swift */; };
 		4EF3FD1F2923E00B00138E94 /* MockValidReposRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD1E2923E00B00138E94 /* MockValidReposRepository.swift */; };
 		4EF3FD212923E03D00138E94 /* MockInValidReposRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */; };
+		4EF3FD242924005300138E94 /* SearchOnReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD232924005300138E94 /* SearchOnReposUseCase.swift */; };
+		4EF3FD262924008800138E94 /* SearchOnReposUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD252924008800138E94 /* SearchOnReposUseCaseContract.swift */; };
+		4EF3FD2A29240C4800138E94 /* MockValidSearchOnReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2929240C4800138E94 /* MockValidSearchOnReposUseCase.swift */; };
+		4EF3FD2C29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2B29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift */; };
+		4EF3FD3029240E3500138E94 /* SearchOnReposUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3FD2F29240E3500138E94 /* SearchOnReposUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,9 +153,14 @@
 		4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidFetchReposUseCase.swift; sourceTree = "<group>"; };
 		4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidFetchReposUseCase.swift; sourceTree = "<group>"; };
 		4EF3FD0D2923A8E100138E94 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReposUseCaseTest.swift; sourceTree = "<group>"; };
+		4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReposUseCaseTests.swift; sourceTree = "<group>"; };
 		4EF3FD1E2923E00B00138E94 /* MockValidReposRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidReposRepository.swift; sourceTree = "<group>"; };
 		4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidReposRepository.swift; sourceTree = "<group>"; };
+		4EF3FD232924005300138E94 /* SearchOnReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnReposUseCase.swift; sourceTree = "<group>"; };
+		4EF3FD252924008800138E94 /* SearchOnReposUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnReposUseCaseContract.swift; sourceTree = "<group>"; };
+		4EF3FD2929240C4800138E94 /* MockValidSearchOnReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidSearchOnReposUseCase.swift; sourceTree = "<group>"; };
+		4EF3FD2B29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInValidSearchOnReposUseCase.swift; sourceTree = "<group>"; };
+		4EF3FD2F29240E3500138E94 /* SearchOnReposUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnReposUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -533,6 +543,7 @@
 		4EF3FCD82922CC0A00138E94 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				4EF3FD222924002700138E94 /* SearchOnRepos */,
 				4EF3FCD92922CC0A00138E94 /* FetchRepos */,
 			);
 			path = UseCases;
@@ -661,7 +672,8 @@
 		4EF3FD102923DB6100138E94 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTest.swift */,
+				4EF3FD2E29240E2400138E94 /* SearchOnReposUseCase */,
+				4EF3FD2D29240E1400138E94 /* FetchReposUseCase */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -669,8 +681,8 @@
 		4EF3FD162923DC9400138E94 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */,
-				4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */,
+				4EF3FD2829240C2800138E94 /* SearchOnReposUseCase */,
+				4EF3FD2729240C1B00138E94 /* FetchReposUseCase */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -682,6 +694,49 @@
 				4EF3FD202923E03D00138E94 /* MockInValidReposRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		4EF3FD222924002700138E94 /* SearchOnRepos */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD232924005300138E94 /* SearchOnReposUseCase.swift */,
+				4EF3FD252924008800138E94 /* SearchOnReposUseCaseContract.swift */,
+			);
+			path = SearchOnRepos;
+			sourceTree = "<group>";
+		};
+		4EF3FD2729240C1B00138E94 /* FetchReposUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD0929239A7700138E94 /* MockValidFetchReposUseCase.swift */,
+				4EF3FD0B29239A8A00138E94 /* MockInValidFetchReposUseCase.swift */,
+			);
+			path = FetchReposUseCase;
+			sourceTree = "<group>";
+		};
+		4EF3FD2829240C2800138E94 /* SearchOnReposUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD2929240C4800138E94 /* MockValidSearchOnReposUseCase.swift */,
+				4EF3FD2B29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift */,
+			);
+			path = SearchOnReposUseCase;
+			sourceTree = "<group>";
+		};
+		4EF3FD2D29240E1400138E94 /* FetchReposUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD1B2923DD2100138E94 /* FetchReposUseCaseTests.swift */,
+			);
+			path = FetchReposUseCase;
+			sourceTree = "<group>";
+		};
+		4EF3FD2E29240E2400138E94 /* SearchOnReposUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EF3FD2F29240E3500138E94 /* SearchOnReposUseCaseTests.swift */,
+			);
+			path = SearchOnReposUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -794,6 +849,7 @@
 				4EF3FCE02922CC0A00138E94 /* ReposResponse.swift in Sources */,
 				4EF3FC832922C99D00138E94 /* CoreDataStorageContext.swift in Sources */,
 				4EF3FCB02922C9D000138E94 /* ImageLoadingView.swift in Sources */,
+				4EF3FD242924005300138E94 /* SearchOnReposUseCase.swift in Sources */,
 				4EF3FCAF2922C9D000138E94 /* ImageLoader.swift in Sources */,
 				4EF3FCD12922CBCF00138E94 /* ReposRepository.swift in Sources */,
 				4EF3FCEC2922CCD900138E94 /* ReposViewModelContract.swift in Sources */,
@@ -831,6 +887,7 @@
 				4EF3FCA52922C9C200138E94 /* EnvironmentManager.swift in Sources */,
 				4EF3FCEE2922CDE800138E94 /* ViewModelState.swift in Sources */,
 				4EF3FC822922C99D00138E94 /* APIBuilder.swift in Sources */,
+				4EF3FD262924008800138E94 /* SearchOnReposUseCaseContract.swift in Sources */,
 				4EF3FC7A2922C99D00138E94 /* Endpoints.swift in Sources */,
 				4EF3FC882922C99D00138E94 /* CoreDataManagerError.swift in Sources */,
 				4EF3FCA62922C9C200138E94 /* BaseError.swift in Sources */,
@@ -848,9 +905,12 @@
 			files = (
 				4EF3FD072923983900138E94 /* ReposViewModelTests.swift in Sources */,
 				4EF3FD212923E03D00138E94 /* MockInValidReposRepository.swift in Sources */,
-				4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTest.swift in Sources */,
+				4EF3FD2C29240C5F00138E94 /* MockInValidSearchOnReposUseCase.swift in Sources */,
+				4EF3FD1C2923DD2100138E94 /* FetchReposUseCaseTests.swift in Sources */,
+				4EF3FD3029240E3500138E94 /* SearchOnReposUseCaseTests.swift in Sources */,
 				4EF3FD1F2923E00B00138E94 /* MockValidReposRepository.swift in Sources */,
 				4EF3FD0C29239A8A00138E94 /* MockInValidFetchReposUseCase.swift in Sources */,
+				4EF3FD2A29240C4800138E94 /* MockValidSearchOnReposUseCase.swift in Sources */,
 				4EF3FD0A29239A7700138E94 /* MockValidFetchReposUseCase.swift in Sources */,
 				4EF3FD0E2923A8E100138E94 /* MockData.swift in Sources */,
 			);

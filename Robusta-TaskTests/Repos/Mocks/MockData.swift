@@ -9,8 +9,12 @@ import Foundation
 @testable import Robusta_Task
 
 struct MockData {
-    static func repos() -> [ReposResponse] {
+    static var repos: [ReposResponse] {
         Array(repeating: .init(), count: 10)
+    }
+    
+    static var filterdRepos: [ReposResponse] {
+        Array(repeating: .init(), count: 2)
     }
     
     static let unexpectedError: BaseError = ErrorResolver.shared.getError(for: ErrorType.unexpected)
