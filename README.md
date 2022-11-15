@@ -21,7 +21,7 @@
 - ImageLoader (Native): Loading Images from URL and Caching it
 
 ## Architecture
-![](https://drive.google.com/drive/folders/1e8YrOUFV_NrzWtQUkKaMkRHKYNM_plvS)
+![](https://github.com/AbdelrhmanKamalEliwa/Robusta-Task/blob/master/Readme%20assets/Usage-2.png?raw=true)
 
 
 ## Author
