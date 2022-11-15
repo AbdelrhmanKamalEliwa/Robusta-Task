@@ -55,10 +55,17 @@ private extension ReposViewModel {
             } receiveValue: { [weak self] repos in
                 guard let self = self else { return }
                 self.state = .idle
-                self.repos.append(contentsOf: repos)
+                
+                if self.repos.isEmpty {
+                    self.repos = Array(repos[self.fetchOffset ..< self.fetchLimit])
+                } else {
+                    self.repos.append(contentsOf: repos)
+                }
+                
                 if self.repos.count == self.maxCount {
                     self.state = .loadedAll
                 }
+                
                 self.fetchOffset += self.fetchLimit
             }
             .store(in: &cancellables)
